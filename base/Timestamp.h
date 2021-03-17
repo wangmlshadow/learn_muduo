@@ -9,8 +9,8 @@
 
 #include <boost/operators.hpp>
 
-//namespace muduo
-//{
+namespace muduo
+{
 
 
 ///
@@ -117,6 +117,6 @@ inline Timestamp addTime(Timestamp timestamp, double seconds)// 从当前时间�
   return Timestamp(timestamp.microSecondsSinceEpoch() + delta);
 }
 
-//}  // namespace muduo
+}  // namespace muduo
 
 #endif  // MUDUO_BASE_TIMESTAMP_H
