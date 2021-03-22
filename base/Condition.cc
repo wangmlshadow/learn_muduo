@@ -3,9 +3,7 @@
 //
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
 
-//#include "muduo/base/Condition.h"
-#include "Condition.h"
-
+#include "muduo/base/Condition.h"
 
 #include <errno.h>
 

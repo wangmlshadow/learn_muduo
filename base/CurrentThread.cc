@@ -3,9 +3,7 @@
 //
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
 
-//#include "muduo/base/CurrentThread.h"
-#include "CurrentThread.h"
-
+#include "muduo/base/CurrentThread.h"
 
 #include <cxxabi.h>
 #include <execinfo.h>

@@ -3,15 +3,10 @@
 //
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
 
-//#include "muduo/base/Thread.h"
-#include "Thread.h"
-//#include "muduo/base/CurrentThread.h"
-#include "CurrentThread.h"
-//#include "muduo/base/Exception.h"
-#include "Exception.h"
-//#include "muduo/base/Logging.h"
-//#include "Logging.h"
-#include "Timestamp.h"
+#include "muduo/base/Thread.h"
+#include "muduo/base/CurrentThread.h"
+#include "muduo/base/Exception.h"
+#include "muduo/base/Logging.h"
 
 #include <type_traits>
 
@@ -22,7 +17,6 @@
 #include <sys/syscall.h>
 #include <sys/types.h>
 #include <linux/unistd.h>
-#include <pthread.h>
 
 namespace muduo
 {
@@ -186,7 +180,7 @@ void Thread::start()
   {
     started_ = false;
     delete data; // or no delete?
-    //LOG_SYSFATAL << "Failed in pthread_create";
+    LOG_SYSFATAL << "Failed in pthread_create";
   }
   else
   {

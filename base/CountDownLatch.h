@@ -11,11 +11,8 @@
 // 可用于所有子线程等待主线程发起起跑  主线程通知子线程
 // 也可用于主线程等待子线程初始化完成才开始工作  
 
-//#include "muduo/base/Condition.h"
-#include "Condition.h"
-//#include "muduo/base/Mutex.h"
-#include "Mutex.h"
-
+#include "muduo/base/Condition.h"
+#include "muduo/base/Mutex.h"
 
 namespace muduo
 {
